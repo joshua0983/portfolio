@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: bisque;
+}
+
+#navbar {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 0;
+    z-index: 1;
+}
+
+#navbar a {
+    color:hsl(from color h s l);
+    text-decoration: wavy;
+}
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+    text-align: center;
+}
+
+#projects {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.project-tile {
+    margin: 1em;
+    padding: 1em;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+@media (max-width: 600px){
+    #navbar {
+        flex-direction: column;
+    }
+    .project-tile{
+        width: 90%;
+    }
+}

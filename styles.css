@@ -2,23 +2,27 @@ body, html {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    background-color: bisque;
+    background-image: url(Pic.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 #navbar {
     position: fixed;
-    top: 0%;
-    width: 100%;
-    background-color: rebeccapurple;
-    display: flex;
-    justify-content: space-around;
+    top: 0;
+    right: 0;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
     padding: 1em 0;
     z-index: 1;
 }
 
 #navbar a {
-    color:hsl(from color h s l);
-    text-decoration: wavy;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 #welcome-section {
@@ -26,15 +30,21 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: burlywood;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
     text-align: center;
+    margin: 4em;
 }
 
-#projects {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-around;
-    padding: 2em;
+#welcome-section img {
+    width: 25%;
+    height: auto;
+    padding-right: 50px;
+    padding-left: 10px;
+}
+
+#Projects, #About, #Contact {
+    padding: 50px;
 }
 
 .project-tile {
@@ -42,13 +52,17 @@ body, html {
     padding: 1em;
     background-color: aliceblue;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
 }
 
 @media (max-width: 600px){
     #navbar {
-        flex-direction: column;
+        position: static;
+        display: block;
+        width: 100%;
     }
     .project-tile{
-        width: 90%;
+        width: 100%;
     }
 }

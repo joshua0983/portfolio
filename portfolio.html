@@ -9,7 +9,7 @@
 
     <body>
         <nav id="navbar">
-            <button onclick="location.href='#Home'" class="button type1">
+            <button onclick="location.href='#welcome-section'" class="button type1">
                 <span class="btn-txt">Home</span>
               </button>
               <button onclick="location.href='#About'" class="button type1">
@@ -28,13 +28,72 @@
             <h1>Joshua Jateno</h1>
             <h2>Computer Science Major @ Vassar College <br> | ColorStack | Student @ CodePath</h2>
         </section>
+        <section id="About">
+            <div class="about-tile">
+                <h2>
+                    About Me
+                </h2>
+            </div>
+        </section>
         <section id="Projects">
             <div class="project-tile">
-                <h2>Projects</h2>
-                <a target="_blank" href="https://github.com/joshua0983/Registration">Registration</a>
+                <h1>Projects</h1>
+                <div class="project" id="Savor">
+                    <h2>Savor</h2>
+                    <p id="savor-description">This Android application allows users to search for restaurants, rate them, and give reviews. It provides a great experience for exploring, evaluating, and sharing opinions about difference in dining establishments. Features include reviewing, rating and searching for restaurants to find restaurants based on name, location, or rating.
+
+                        Rate and Review: Share your dining experiences by rating and leaving reviews for restaurants.</p>
+                    
+                    <a target="_blank" href="https://github.com/joshua0983/Savor">
+                        <button class="cta">
+                            <span>Visit</span>
+                            <svg width="15px" height="10px" viewBox="0 0 13 10">
+                              <path d="M1,5 L11,5"></path>
+                              <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                          </button>                          
+                    </a>
+                </div>
+                <div class="project" id="registration">
+                    <div class="registration-title">
+                    <h2>Registration</h2>
+                    <img src="laptop.png" id="registration-icon">
+                    </div>
+                    <p id="registration-description">Developed and deployed a streamlined class registration system that efficiently processes a list of students' class preferences, taking into account their order of preference and the availability of classes. Additionally, implemented advanced algorithms to further enhance the registration process by factoring in students' draw numbers, ensuring a fair and efficient allocation of classes.</p>
+                    
+                    <a target="_blank" href="https://github.com/joshua0983/Registration">
+                        <button class="cta">
+                            <span>Visit</span>
+                            <svg width="15px" height="10px" viewBox="0 0 13 10">
+                              <path d="M1,5 L11,5"></path>
+                              <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                          </button>                          
+                    </a>
+                </div>
+                <div class="project" id="filmChoice">
+                    <h2>Film Choice</h2>
+                    <p id="filmChoice-description">This program has been specifically designed to assist individuals in making informed choices among shows they've previously watched and have a strong desire to sort based on their preferences. It addresses the common dilemma of deciding which show to rewatch or prioritize when you've enjoyed multiple titles over time.</p>
+                    
+                    <a target="_blank" href="https://github.com/joshua0983/filmChoice">
+                        <button class="cta">
+                            <span>Visit</span>
+                            <svg width="15px" height="10px" viewBox="0 0 13 10">
+                              <path d="M1,5 L11,5"></path>
+                              <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                          </button>                          
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="Contact">
+            <div class="about-tile">
+                <h2>Contact Me</h2>
             </div>
         </section>
         <a href="github.com/joshua0983"><strong>My github</strong></a>
+        <script src="script.js"></script>
     </body>
 
 </html>

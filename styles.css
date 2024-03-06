@@ -17,12 +17,13 @@ body, html {
     width: auto;
     background-color: rgba(255, 255, 255, 0.7);
     color: black;
-    padding: 2em 0;
+    padding: 0.4em 0;
     z-index: 1;
     border-radius: 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition: background-color 0.2s ease-in-out;
 }
 
 #navbar a {
@@ -30,6 +31,14 @@ body, html {
     text-decoration: none;
     font-size: 20px;
     border-radius: 30px;
+}
+
+#navbar.transparent {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#navbar.solid {
+    background-color: rgba(255, 255, 255, 1);
 }
 
 #welcome-section {
@@ -42,12 +51,15 @@ body, html {
     text-align: center;
     margin: 4em;
     border-radius: 30px;
+    margin-top: 100px;
+    margin-bottom: 30px;
 }
 
 #welcome-section img {
     width: 25%;
     height: auto;
     margin-left: 180px;
+    border-radius: 30px;
 }
 
 #welcome-section h1 {
@@ -66,17 +78,65 @@ body, html {
 }
 
 #Projects, #About, #Contact, .project-tile {
-    padding: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
     border-radius: 30px;
 }
 
-.project-tile {
+.about-tile {
+    height: 60vh;
     margin: 1em;
     padding: 1em;
     background-color: aliceblue;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(5px);
+    border-radius: 30px;
+    font-family: sans-serif;
+    font-size: 32px;
+}
+
+
+.project-tile {
+    height: 80vh;
+    margin: 1em;
+    padding: 1em;
+    margin: 30px;
+    background-color: aliceblue;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#Projects h1{
+    font-family: sans-serif;
+    font-size: 48px;
+    align-items: center;
+    padding-left: 350px;
+    padding-right: 400px;
+}
+
+#Projects h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.contact-tile {
+    height: 60vh;
+    margin: 1em;
+    padding: 1em;
+    background-color: aliceblue;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    font-family: sans-serif;
+    font-size: 32px;
 }
 
 @media (max-width: 600px){
@@ -84,6 +144,9 @@ body, html {
         position: static;
         display: block;
         width: 100%;
+    }
+    .about-tile{
+        width: 100;
     }
     .project-tile{
         width: 100%;
@@ -133,3 +196,113 @@ body, html {
     visibility: visible;
     transform: scale(100) translateX(2px);
   }
+
+  /**/
+
+  .cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+  }
+  
+  .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+  }
+  
+  .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active {
+    transform: scale(0.95);
+  }
+  
+  /**/
+
+  .project {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 450px;
+  }
+  
+  .project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+
+  #Savor {
+    width: 400px;
+  }
+
+  #registration {
+    width: 400px;
+  }
+
+  #filmChoice {
+    width: 400px;
+  }
+
+  .project-tile p {
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+.registration-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 90px;
+    margin-bottom: -20px;
+}
+
+#registration-icon {
+    width: 30px;
+    height: auto;
+}

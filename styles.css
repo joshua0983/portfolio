@@ -53,6 +53,7 @@ body, html {
     border-radius: 30px;
     margin-top: 100px;
     margin-bottom: 30px;
+    color: #333;
 }
 
 #welcome-section img {
@@ -95,6 +96,7 @@ body, html {
     border-radius: 30px;
     font-family: sans-serif;
     font-size: 32px;
+    color: #333;
 }
 
 
@@ -111,6 +113,7 @@ body, html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    color: #333;
 }
 
 #Projects h1{
@@ -137,6 +140,7 @@ body, html {
     border-radius: 30px;
     font-family: sans-serif;
     font-size: 32px;
+    color: #333;
 }
 
 @media (max-width: 600px){
@@ -294,15 +298,52 @@ body, html {
     font-family: 'Times New Roman', Times, serif;
   }
   
-.registration-title {
+.registration-title, .filmChoice-title {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     margin-left: 90px;
     margin-bottom: -20px;
 }
 
-#registration-icon {
+#registration-icon, #filmChoice-icon, #restaurant-icon, #mail-icon {
     width: 30px;
     height: auto;
+}
+
+.savor-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 130px;
+    margin-bottom: -20px;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 310px;
+    height: 50px;
+    margin-left: 80px;
+    gap: 10px;
+}
+
+.contact img {
+    margin-left: 40px;
+}
+
+#project-2-visit {
+    padding-top: 20px;
+}
+
+#project-3-visit {
+    padding-top: 45px;
+}
+
+.contact p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
 }

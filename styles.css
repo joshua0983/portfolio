@@ -86,7 +86,7 @@ body, html {
 }
 
 .about-tile {
-    height: 60vh;
+    height: 70vh;
     margin: 1em;
     padding: 1em;
     background-color: aliceblue;
@@ -347,3 +347,100 @@ body, html {
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
 }
+
+.about {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 1250px;
+    height: 140px;
+    font-family: 'Times Newxs Roman', Times, serif;
+    font-size: 20px;
+}
+
+#my-description {
+    padding-top: 1px;
+}
+
+#programming-languages {
+    width: 600px;
+    height: 200px;
+    margin-top: 30px;
+    padding-top: 1px;
+}
+
+#programming-languages h3 {
+    margin-left: -25px;
+}
+
+.language-description {
+    align-items: center;
+    gap: 45px;
+    display: flex;
+    padding-left: 50px;
+    margin-left: -25px;
+}
+
+.language-description {
+    width: 30px;
+    height: auto;
+}
+
+#java{
+    margin-top: -20px;
+    margin-left: 40px;
+    display: flex;
+}
+
+#python{
+    margin-top: -20px;
+    margin-left: 40px;
+    display: flex;
+} 
+
+#html {
+    margin-top: -20px;
+    margin-left: 30px;
+    display: flex;
+}
+
+#css {
+    margin-top: -20px;
+    display: flex;
+    margin-bottom: -100px;
+    margin-left: -475px;
+    padding-right: 10px;
+}
+
+#java-script {
+    margin-top: -20px;
+    margin-left: 30px;
+    display: flex;
+    margin-bottom: -100px;
+}
+
+#c {
+    margin-top: -20px;
+    margin-left: 5px;
+    display: flex;
+    margin-bottom: -100px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+
+#tools-and-frameworks {
+    width: 600px;
+    height: 200px;
+    margin-top: -143px;
+    margin-left: 650px;
+}
+
+#tools-and-frameworks h3 {
+    padding-top: 25px;
+}
+

@@ -9,3 +9,14 @@ window.onscroll = function() {
     }
 };
 
+function sendEmail(){
+    window.location.href = "mailto:joshuajateno@gmail.com";
+}
+
+function goToLinkedIn(){
+    window.location.href = "https://linkedin.com/in/joshuajateno";
+}
+
+function call(){
+    window.location.href = "tel: +18456256683";
+}

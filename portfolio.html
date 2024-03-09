@@ -71,6 +71,20 @@
                         </div>
                         <div class="about" id="tools-and-frameworks">
                             <h3>Tools/Frameworks</h3>
+                                <div class="tools-and-frameworks-description">
+                                    <div id="git">
+                                        <img src="git.png" class="icon">
+                                        <p>Git</p>
+                                    </div>
+                                    <div id="android-studio">
+                                        <img src="androidstudio.png" class="icon">
+                                        <p>Android Studio</p>
+                                    </div>
+                                    <div id="figma">
+                                        <img src="figma.png" class="icon">
+                                        <p>Figma</p>
+                                    </div>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -139,15 +153,40 @@
         </section>
         <section id="Contact">
             <div class="about-tile">
+                <div contacts>
                 <h2>Contact Me</h2>
+                <div id="full-email">
+                <button onclick="sendEmail()" id="email-button">
                 <div class="contact" id="email">
                     <img src="mail.png" id="mail-icon">
                     <p>joshuajateno@gmail.com</p>
+                    </div>
+                </button>
                 </div>
-                
+                <div id="full-linkedIn">
+                <button id="linkedIn-button" onclick="goToLinkedIn()">
+                    <div class="contact" id="linkedIn">
+                        <img src="linkedIn.png" id="linkedIn-icon">
+                        <p>LinkedIn</p>
+                    </div>
+                </button>
+                </div>
+                <div id="full-phone">
+                <button id="phone-button" onclick="call()">
+                    <div class="contact" id="phone">
+                        <img src="phone.png" id="phone-icon">
+                        <p>+1 (845) 625-6683</p>
+                    </div>
+                </button>
+                </div>
+                </div>
+                <div class="submit">
+                    <input id="Name-holder" placeholder="Name" class="input-style" type="text">
+                    <input id="email-holder" placeholder="Email" class="input-style" type="text">
+                    <input id="message-holder" placeholder="Message" class="input-style" type="text">
+                </div>
             </div>
         </section>
-        <a href="github.com/joshua0983"><strong>My github</strong></a>
         <script src="script.js"></script>
     </body>
 

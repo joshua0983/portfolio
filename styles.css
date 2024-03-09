@@ -86,6 +86,7 @@ body, html {
 }
 
 .about-tile {
+    display: flex;
     height: 70vh;
     margin: 1em;
     padding: 1em;
@@ -150,10 +151,13 @@ body, html {
         width: 100%;
     }
     .about-tile{
-        width: 100;
+        width: 100%;
     }
     .project-tile{
         width: 100%;
+    }
+    .contact-tile{
+        width: 100%
     }
 }
 
@@ -295,7 +299,7 @@ body, html {
   .project-tile p {
     padding: 15px;
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
 .registration-title, .filmChoice-title {
@@ -306,7 +310,7 @@ body, html {
     margin-bottom: -20px;
 }
 
-#registration-icon, #filmChoice-icon, #restaurant-icon, #mail-icon {
+#registration-icon, #filmChoice-icon, #restaurant-icon, #mail-icon, #linkedIn-icon, #phone-icon{
     width: 30px;
     height: auto;
 }
@@ -325,10 +329,20 @@ body, html {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 310px;
+    width: 311px;
     height: 50px;
-    margin-left: 80px;
+    margin-left: -8px;
     gap: 10px;
+    margin-top: -2px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .contact img {
@@ -344,7 +358,7 @@ body, html {
 }
 
 .contact p {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
 
@@ -354,12 +368,17 @@ body, html {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 1250px;
     height: 140px;
-    font-family: 'Times Newxs Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
 
 #my-description {
     padding-top: 1px;
+}
+
+#my-description p {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #programming-languages {
@@ -444,3 +463,124 @@ body, html {
     padding-top: 25px;
 }
 
+.tools-and-frameworks-description {
+    align-items: center;
+    gap: 45px;
+    display: flex;
+    margin-top: -20px;
+    padding-left: 70px;
+}
+
+#git {
+    display: flex;
+    padding-right: 30px;
+}
+
+#android-studio {
+    display: flex;
+}
+
+#figma {
+    display: flex;
+}
+
+/**/
+
+#email-button, #linkedIn-button {
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: transparent;
+    width: 310px;
+    height: 50px;
+    border-color: transparent;
+    margin-right: 100px;
+    padding-right: -100px;
+    margin-left: -700px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#phone-button {
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: transparent;
+    width: 310px;
+    height: 50px;
+    border-color: transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-right: 100px;
+}
+
+#email-button:hover, #linkedIn-button:hover, #phone-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+#email-button {
+    margin-left: 100px;
+    margin-right: -100px;
+}
+
+#mail-icon {
+    padding-right: 2px;
+}
+ 
+#full-email {
+    margin-right: 900px;
+}
+
+#full-linkedIn {
+    margin-right: -100px;
+    margin-top: 20px;
+}
+#full-phone {
+    margin-top: 20px;
+    margin-left: -700px;
+}
+
+/**/
+
+.input-style {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+}
+  
+.input-style:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+#Name-holder {
+    height: 20px;
+    width: auto;
+    padding-right: 300px;
+    margin-left: -600px;
+    margin-top: 135px;;
+}
+
+#email-holder {
+    height: 20px;
+    width: auto;
+    padding-right: 300px;
+    margin-left: -481px;
+    margin-top: 200px;
+    padding-top: -1px;
+}
+
+#message-holder {
+    height: 20px;
+    width: auto;
+    padding-right: 300px;
+    margin-left: -481px;
+    margin-top: 265px;
+    padding-bottom: 150px;
+}
+
+  

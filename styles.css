@@ -101,7 +101,7 @@ body, html {
 
 
 .project-tile {
-    height: 80vh;
+    height: 85vh;
     margin: 1em;
     padding: 1em;
     margin: 30px;
@@ -129,19 +129,6 @@ body, html {
     font-size: 30px;
 }
 
-.contact-tile {
-    height: 60vh;
-    margin: 1em;
-    padding: 1em;
-    background-color: aliceblue;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(5px);
-    border-radius: 30px;
-    font-family: sans-serif;
-    font-size: 32px;
-    color: #333;
-}
 
 @media (max-width: 600px){
     #navbar {
@@ -273,7 +260,7 @@ body, html {
     transform: scale(1);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 400px;
-    height: 450px;
+    height: 490px;
   }
   
   .project:hover {
@@ -349,11 +336,11 @@ body, html {
 }
 
 #project-2-visit {
-    padding-top: 20px;
+    padding-top: 42px;
 }
 
 #project-3-visit {
-    padding-top: 45px;
+    padding-top: 58px;
 }
 
 .contact p {
@@ -426,7 +413,7 @@ body, html {
     margin-top: -20px;
     display: flex;
     margin-bottom: -100px;
-    margin-left: -475px;
+    margin-left: -483px;
     padding-right: 10px;
 }
 
@@ -439,7 +426,6 @@ body, html {
 
 #c {
     margin-top: -20px;
-    margin-left: 5px;
     display: flex;
     margin-bottom: -100px;
 }
@@ -486,7 +472,7 @@ body, html {
 /**/
 
 .contact-tile {
-    height: 70vh;
+    height: 80vh;
     margin: 1em;
     padding: 1em;
     background-color: aliceblue;
@@ -570,37 +556,44 @@ body, html {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-#Name-holder {
+#name-holder {
     height: 20px;
-    width: auto;
-    padding-right: 300px;
+    width: 500px;
     margin-left: -600px;
     margin-top: 135px;;
 }
 
 #email-holder {
     height: 20px;
-    width: auto;
-    padding-right: 300px;
-    margin-left: -481px;
+    width: 500px;
+    margin-left: -524px;
     margin-top: 200px;
     padding-top: -1px;
     margin-bottom: 30px;
 }
 
+#subject-holder {
+    height: 20px;
+    width: 500px;
+    margin-top: 270px;
+    margin-left: -524px;
+}
+
 #message-holder {
     height: 20px;
-    width: auto;
+    width: 210px;
     padding-right: 300px;
-    margin-left: -481px;
-    margin-top: 265px;
+    margin-left: -523px;
+    margin-top: 340px;
     padding-bottom: 150px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .submit {
-    margin-right: -1000px;
-    margin-top: -455px;
-    margin-left: 70px;
+    margin-right: 0px;
+    margin-top: -325px;
+    margin-left: 1200px;
+    display: flex;
 }
 
 /**/
@@ -618,8 +611,10 @@ body, html {
     font-weight: 600;
     cursor: pointer;
     color: white;
-    background: linear-gradient(to left,#333,rgba(255, 255, 255, 0.7));
+    background: linear-gradient(to left,#333,#555);
     letter-spacing: 0.7px;
+    margin-top: 550px;
+    margin-left: -320px ;
   }
   
   .submitBtn:hover .arrow {

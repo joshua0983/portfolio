@@ -71,7 +71,7 @@ body, html {
 
 #welcome-section h1 {
     font-family: sans-serif;
-    font-size: 48px;
+    font-size: 3rem;
     margin-top: -320px;
     margin-left: 180px;
     margin-bottom: -100px;
@@ -140,6 +140,9 @@ body, html {
         width: 100%;
         height: 1300px;
     }
+    #my-description, .language-description, .tools-and-frameworks-description {
+        height: auto;
+    }
 }
 
 @media (max-width: 1100px){
@@ -147,6 +150,9 @@ body, html {
         position: fixed;
         display: block;
         width: 100%;
+    }
+    #my-description, .language-description, .tools-and-frameworks-description {
+        height: auto;
     }
     
 }
@@ -161,6 +167,16 @@ body, html {
     .project-tile {
         width: 100%;
         height: 2000px;
+    }
+    .about-tile{
+        height: 1000px;
+    }
+    .about-tile h2 {
+        margin-left: 0
+    }
+    #my-description {
+        width: 80%;
+        height: auto;
     }
     
 }
@@ -189,9 +205,6 @@ body, html {
     #welcome-section{
         height: 60vh;
     }
-    .about-tile{
-        width: 100%;
-    }
     .contact-tile{
         width: 100%
     }
@@ -201,7 +214,53 @@ body, html {
     #welcome-section h2 {
         margin-left: 0;
     }
+    #my-description {
+        width: 10%;
+        height: auto;
+    }
+    .about-tile, #programming-languages, #tools-and-frameworks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-tile h2, .about-tile p, .language-description div, .tools-and-frameworks-description div {
+        width: 90%;
+        text-align: center;
+    }
+    .language-description div, .tools-and-frameworks-description div {
+        text-align: center;
+        width: 100%; 
+    }
+    .about-tile p, .about-tile h2, .about-tile h3 {
+        font-size: smaller; 
+    }
+
+    .icon {
+        width: 50px;
+        height: auto;
+    }
+    .about, .language-description, .tools-and-frameworks-description {
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+    }
+
+    .about #programming-languages, .about #tools-and-frameworks {
+        width: auto;
+        margin: 0 auto; 
+    }
+
+    .language-description div, .tools-and-frameworks-description div {
+        width: 90%; 
+        margin-bottom: 20px;
+    }
+
+    .icon {
+        width: 25px;
+        height: auto; 
+    }
 }
+
 
 .button {
     height: 50px;
@@ -408,14 +467,23 @@ body, html {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 1250px;
     height: 7em;
+    width: 78.125em;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    justify-content: space-around;
+}
+
+.about-tile, .language-description, .tools-and-frameworks-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    gap: 20px;
 }
 
 #my-description {
-    padding-top: 1px;
+    padding: 2px;
+    width: 100%;
 }
 
 #my-description p {
@@ -424,7 +492,7 @@ body, html {
 }
 
 #programming-languages {
-    width: 600px;
+    width: 50%;
     height: 200px;
     margin-top: 30px;
     padding-top: 1px;
@@ -438,11 +506,8 @@ body, html {
     align-items: center;
     gap: 45px;
     display: flex;
-    padding-left: 50px;
+    padding-left: 15px;
     margin-left: -25px;
-}
-
-.language-description {
     width: 30px;
     height: auto;
 }
@@ -461,7 +526,7 @@ body, html {
 
 #html {
     margin-top: -20px;
-    margin-left: 30px;
+    margin-left: 100px;
     display: flex;
 }
 
@@ -494,22 +559,25 @@ body, html {
 }
 
 #tools-and-frameworks {
-    width: 600px;
+    width: 97%;
     height: 200px;
-    margin-top: -143px;
+    margin-top: -363px;
     margin-left: 650px;
 }
 
 #tools-and-frameworks h3 {
-    padding-top: 25px;
+    padding-top: 27px;
 }
 
 .tools-and-frameworks-description {
     align-items: center;
-    gap: 45px;
+    gap: 25px;
     display: flex;
     margin-top: -20px;
-    padding-left: 70px;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #git {

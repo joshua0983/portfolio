@@ -178,12 +178,32 @@ body, html {
         width: 80%;
         height: auto;
     }
+    .about, .language-description, .tools-and-frameworks-description {
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+    }
+
+    .about #programming-languages, .about #tools-and-frameworks {
+        width: auto;
+        margin: 0 auto; 
+    }
+
+    .language-description div, .tools-and-frameworks-description div {
+        width: 90%; 
+        margin-bottom: 20px;
+    }
+
+    .icon {
+        width: 25px;
+        height: auto; 
+    }
     
 }
 
 @media (max-width: 768px){
     #navbar {
-        position: fixed;
+        position: static;
         display: block;
         width: 100%;
     }
@@ -258,6 +278,12 @@ body, html {
     .icon {
         width: 25px;
         height: auto; 
+    }
+    .about {
+        flex-direction: column;
+    }
+    #programming-languages, #tools-and-frameworks {
+        width: 100%; 
     }
 }
 
@@ -561,8 +587,6 @@ body, html {
 #tools-and-frameworks {
     width: 97%;
     height: 200px;
-    margin-top: -363px;
-    margin-left: 650px;
 }
 
 #tools-and-frameworks h3 {

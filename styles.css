@@ -84,7 +84,7 @@ body, html {
     padding-right: 90px;
 }
 
-#Projects, #About, #Contact, .project-tile {
+#Projects, #About, #Contact{
     padding-right: 30px;
     padding-left: 30px;
     padding-top: 10px;
@@ -92,7 +92,7 @@ body, html {
 }
 
 .about-tile {
-    height: 70vh;
+    height: auto;
     margin: 1em;
     padding: 1em;
     background-color: aliceblue;
@@ -107,10 +107,9 @@ body, html {
 
 
 .project-tile {
-    height: 85vh;
+    height: auto;
     margin: 1em;
     padding: 1em;
-    margin: 30px;
     background-color: aliceblue;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.7);
@@ -138,7 +137,7 @@ body, html {
 @media (max-width: 1190px){
     .project-tile {
         width: 100%;
-        height: 1300px;
+        height: auto;
     }
     #my-description, .language-description, .tools-and-frameworks-description {
         height: auto;
@@ -166,10 +165,10 @@ body, html {
 
     .project-tile {
         width: 100%;
-        height: 2000px;
+        height: auto;
     }
     .about-tile{
-        height: 1000px;
+        height: auto;
     }
     .about-tile h2 {
         margin-left: 0
@@ -178,25 +177,8 @@ body, html {
         width: 80%;
         height: auto;
     }
-    .about, .language-description, .tools-and-frameworks-description {
-        flex-direction: column; 
-        align-items: center; 
-        width: 100%; 
-    }
-
-    .about #programming-languages, .about #tools-and-frameworks {
-        width: auto;
-        margin: 0 auto; 
-    }
-
-    .language-description div, .tools-and-frameworks-description div {
-        width: 90%; 
-        margin-bottom: 20px;
-    }
-
-    .icon {
-        width: 25px;
-        height: auto; 
+    #my-description, .language-description, .tools-and-frameworks-description {
+        height: auto;
     }
     
 }
@@ -234,56 +216,9 @@ body, html {
     #welcome-section h2 {
         margin-left: 0;
     }
-    #my-description {
-        width: 10%;
+
+    #my-description, .language-description, .tools-and-frameworks-description {
         height: auto;
-    }
-    .about-tile, #programming-languages, #tools-and-frameworks {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-tile h2, .about-tile p, .language-description div, .tools-and-frameworks-description div {
-        width: 90%;
-        text-align: center;
-    }
-    .language-description div, .tools-and-frameworks-description div {
-        text-align: center;
-        width: 100%; 
-    }
-    .about-tile p, .about-tile h2, .about-tile h3 {
-        font-size: smaller; 
-    }
-
-    .icon {
-        width: 50px;
-        height: auto;
-    }
-    .about, .language-description, .tools-and-frameworks-description {
-        flex-direction: column; 
-        align-items: center; 
-        width: 100%; 
-    }
-
-    .about #programming-languages, .about #tools-and-frameworks {
-        width: auto;
-        margin: 0 auto; 
-    }
-
-    .language-description div, .tools-and-frameworks-description div {
-        width: 90%; 
-        margin-bottom: 20px;
-    }
-
-    .icon {
-        width: 25px;
-        height: auto; 
-    }
-    .about {
-        flex-direction: column;
-    }
-    #programming-languages, #tools-and-frameworks {
-        width: 100%; 
     }
 }
 
@@ -402,6 +337,7 @@ body, html {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 25em;
     height: 490px;
+    align-items: center;
   }
   
   .project:hover {
@@ -493,11 +429,14 @@ body, html {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height: 7em;
+    height: auto;
     width: 78.125em;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .about-tile, .language-description, .tools-and-frameworks-description {
@@ -517,104 +456,62 @@ body, html {
     padding-right: 20px;
 }
 
-#programming-languages {
+#programming-languages, #tools-and-frameworks{
     width: 50%;
-    height: 200px;
-    margin-top: 30px;
-    padding-top: 1px;
+    height: auto;
 }
 
-#programming-languages h3 {
-    margin-left: -25px;
+#tools-and-frameworks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#programming-languages, .tools-and-frameworks{
+    display: flex;
+    width: 50%;
+    height: auto;
+}
+
+#programming-languages h1, #tools-and-frameworks h1 {
+    font-size: 24px;
+    text-align: center;
 }
 
 .language-description {
     align-items: center;
-    gap: 45px;
+    flex-wrap: wrap;
+    gap: 25px;
     display: flex;
-    padding-left: 15px;
-    margin-left: -25px;
-    width: 30px;
     height: auto;
+    justify-content: center;
 }
 
-#java{
-    margin-top: -20px;
-    margin-left: 40px;
-    display: flex;
-}
-
-#python{
-    margin-top: -20px;
-    margin-left: 40px;
-    display: flex;
-} 
-
-#html {
-    margin-top: -20px;
-    margin-left: 100px;
-    display: flex;
-}
-
-#css {
-    margin-top: -20px;
-    display: flex;
-    margin-bottom: -100px;
-    margin-left: -483px;
-    padding-right: 10px;
-}
-
-#java-script {
-    margin-top: -20px;
-    margin-left: 30px;
-    display: flex;
-    margin-bottom: -100px;
-}
-
-#c {
-    margin-top: -20px;
-    display: flex;
-    margin-bottom: -100px;
-}
 
 .icon {
     width: 30px;
     height: 30px;
-    padding-top: 15px;
-    padding-right: 10px;
+}
+.icon p {
+    padding-right: 5px;
 }
 
-#tools-and-frameworks {
-    width: 97%;
-    height: 200px;
-}
-
-#tools-and-frameworks h3 {
-    padding-top: 27px;
-}
 
 .tools-and-frameworks-description {
     align-items: center;
     gap: 25px;
     display: flex;
-    margin-top: -20px;
-    padding-left: 20px;
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    height: auto;
 }
 
-#git {
+#programming-languages-tools-and-frameworks {
     display: flex;
-    padding-right: 30px;
-}
-
-#android-studio {
-    display: flex;
-}
-
-#figma {
-    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 30px;
 }
 
 /**/

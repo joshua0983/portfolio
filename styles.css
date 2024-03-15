@@ -21,10 +21,10 @@ body, html {
     z-index: 1;
     border-radius: 0px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     transition: background-color 0.2s ease-in-out;
-    gap: -10vh;
 }
 
 #navbar a {
@@ -36,7 +36,9 @@ body, html {
 
 #navbar button {
     flex-shrink: 0;
-    margin: 0 5em;
+    margin: 0 6em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 #navbar.transparent {
@@ -132,13 +134,15 @@ body, html {
 }
 
 @media (max-width: 1190px){
-
+    #welcome-section{
+        margin-top: 180px;
+    }
     #my-description, .language-description, .tools-and-frameworks-description {
         height: auto;
     }
     #navbar {
         position: fixed;
-        display: block;
+        flex-direction: row;
         width: 100%;
         align-items: center;
         justify-content: center;
@@ -148,10 +152,10 @@ body, html {
 @media (max-width: 1100px){
     #navbar {
         position: fixed;
-        display: block;
         width: 100%;
         align-items: center;
     }
+
     #my-description, .language-description, .tools-and-frameworks-description {
         height: auto;
     }
@@ -167,9 +171,13 @@ body, html {
 @media (max-width: 900px){
     #navbar {
         position: fixed;
-        display: block;
         width: 100%;
         align-items: center;
+    }
+    #navbar button {
+        display: block;
+        text-align: center;
+        padding: 10px;
     }
 
     .project-tile {
@@ -192,27 +200,6 @@ body, html {
 }
 
 @media (max-width: 768px){
-    #navbar {
-        position: static;
-        display: block;
-        width: 100%;
-        align-items: center;
-    }
-    #navbar a {
-        display: block;
-        text-align: center;
-        padding: 10px;
-    }
-    #navbar button {
-        display: block;
-        margin: 10px auto;
-    }
-    #navbar.transparent {
-        background-color: rgba(255, 255, 255, 1);
-    }
-    #navbar.solid {
-        background-color: rgba(255, 255, 255, 1);
-    }
     #welcome-section{
         height: 60vh;
     }
@@ -237,6 +224,11 @@ body, html {
     }
 }
 
+@media (max-width: 719px) {
+    #navbar {
+        position: block;
+    }
+}
 
 .button {
     height: 50px;

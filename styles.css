@@ -474,12 +474,16 @@ body, html {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 10px;
+}
+
+#tools-and-frameworks h3 {
+    margin-bottom: 10px;
 }
 
 
 #programming-languages, .tools-and-frameworks{
     display: flex;
+    flex-direction: column;
     width: 50%;
     height: auto;
 }
@@ -495,12 +499,11 @@ body, html {
 .language-description {
     align-items: center;
     flex-wrap: wrap;
-    gap: 25px;
     display: flex;
     height: auto;
     justify-content: center;
-    padding: 10px;
 }
+
 
 
 .icon {
@@ -515,12 +518,13 @@ body, html {
 
 
 .tools-and-frameworks-description {
+    width: 80%;
     align-items: center;
-    gap: 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     height: auto;
+    margin-top: 10px;
 }
 
 #programming-languages-tools-and-frameworks {

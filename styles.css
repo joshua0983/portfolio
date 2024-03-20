@@ -147,6 +147,15 @@ body, html {
         align-items: center;
         justify-content: center;
     }
+    #contact-components {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contacts, #submit-form {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1100px){
@@ -164,6 +173,15 @@ body, html {
     }
     #welcome-text h2 {
         font-size: 25px;
+    }
+    #contact-components {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contacts, #submit-form {
+        width: 100%;
     }
     
 }
@@ -196,6 +214,15 @@ body, html {
     #my-description, .language-description, .tools-and-frameworks-description {
         height: auto;
     }
+    #contact-components {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contacts, #submit-form {
+        width: 100%;
+    }
     
 }
 
@@ -221,6 +248,15 @@ body, html {
     }
     #welcome-text h2 {
         font-size: 20px;
+    }
+    #contact-components {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contacts, #submit-form {
+        width: 100%;
     }
 }
 
@@ -384,6 +420,7 @@ body, html {
 #registration-icon, #filmChoice-icon, #restaurant-icon, #mail-icon, #linkedIn-icon, #phone-icon{
     width: 30px;
     height: auto;
+    margin-right: 30px;
 }
 
 .savor-title {
@@ -396,6 +433,7 @@ body, html {
 
 .contact{
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 30px;
@@ -552,10 +590,12 @@ body, html {
 }
 
 #email-button, #linkedIn-button, #phone-button {
+    display: flex;
+    flex-wrap: wrap;
     cursor: pointer;
     border-radius: 100px;
     background-color: transparent;
-    width: 100px;
+    width: 100%;
     height: 50px;
     border-color: transparent;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -564,9 +604,6 @@ body, html {
 }
 
  
-#full-email, #full-linkedIn, #full-phone {
-    width: 20%;
-}
 
 /**/
 

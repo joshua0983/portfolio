@@ -157,45 +157,49 @@
             </div>
         </section>
         <section id="Contact">
-            <div class="contact-tile">
-                <div>
+                <div class="contact-tile">
                     <h2>Contact Me</h2>
-                    <div id="full-email">
-                        <button onclick="sendEmail()" id="email-button">
-                        <div class="contact" id="email">
-                            <img src="mail.png" id="mail-icon">
-                            <p>joshuajateno@gmail.com</p>
+                    <div id="contact-components">
+                        <div id="contacts">
+                            <div id="full-email">
+                                <button onclick="sendEmail()" id="email-button">
+                                <div class="contact" id="email">
+                                    <img src="mail.png" id="mail-icon">
+                                    <p>joshuajateno@gmail.com</p>
+                                    </div>
+                                </button>
                             </div>
-                        </button>
+                            <div id="full-linkedIn">
+                                <button id="linkedIn-button" onclick="goToLinkedIn()">
+                                    <div class="contact" id="linkedIn">
+                                        <img src="linkedIn.png" id="linkedIn-icon">
+                                        <p>LinkedIn</p>
+                                    </div>
+                                </button>
+                            </div>
+                            <div id="full-phone">
+                                <button id="phone-button" onclick="call()">
+                                    <div class="contact" id="phone">
+                                        <img src="phone.png" id="phone-icon">
+                                        <p>+1 (845) 625-6683</p>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    <div id="submit-form">
+                        <form class="submit">
+                            <input id="name-holder" placeholder="Name" class="input-style" type="text">
+                            <input id="email-holder" placeholder="Email" class="input-style" type="text">
+                            <input id="subject-holder" placeholder="Subject" class="input-style" type="text">
+                            <textarea id="message-holder" placeholder="Message" class="input-style" type="text"></textarea>
+                            <button class="submitBtn" onclick="submitForm()">
+                                Submit
+                                <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                            </button>
+                        </form>
                     </div>
-                    <div id="full-linkedIn">
-                        <button id="linkedIn-button" onclick="goToLinkedIn()">
-                            <div class="contact" id="linkedIn">
-                                <img src="linkedIn.png" id="linkedIn-icon">
-                                <p>LinkedIn</p>
-                            </div>
-                        </button>
-                    </div>
-                    <div id="full-phone">
-                        <button id="phone-button" onclick="call()">
-                            <div class="contact" id="phone">
-                                <img src="phone.png" id="phone-icon">
-                                <p>+1 (845) 625-6683</p>
-                            </div>
-                        </button>
                     </div>
                 </div>
-                    <form class="submit">
-                        <input id="name-holder" placeholder="Name" class="input-style" type="text">
-                        <input id="email-holder" placeholder="Email" class="input-style" type="text">
-                        <input id="subject-holder" placeholder="Subject" class="input-style" type="text">
-                        <textarea id="message-holder" placeholder="Message" class="input-style" type="text"></textarea>
-                        <button class="submitBtn" onclick="submitForm()">
-                            Submit
-                            <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
-                        </button>
-                    </form>
-            </div>
         </section>
         <script src="script.js"></script>
     </body>

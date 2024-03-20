@@ -402,7 +402,7 @@ body, html {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 311px;
     height: 50px;
-    margin-left: -8px;
+    margin-left: 50px;
     gap: 10px;
     margin-top: -2px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -551,11 +551,11 @@ body, html {
     color: #333;
 }
 
-#email-button, #linkedIn-button {
+#email-button, #linkedIn-button, #phone-button {
     cursor: pointer;
-    border-radius: 30px;
+    border-radius: 100px;
     background-color: transparent;
-    width: 10%;
+    width: 100px;
     height: 50px;
     border-color: transparent;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -563,49 +563,31 @@ body, html {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#phone-button {
-    cursor: pointer;
-    border-radius: 30px;
-    background-color: transparent;
-    width: 10%;
-    height: 50px;
-    border-color: transparent;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding-right: 100px;
-}
-
-#email-button:hover, #linkedIn-button:hover, #phone-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-}
-
-#email-button {
-    margin-left: 100px;
-    margin-right: -100px;
-}
-
-#mail-icon {
-    padding-right: 2px;
-}
  
-#full-email {
-    margin-right: 900px;
-}
-
-#full-linkedIn {
-    margin-right: -100px;
-    margin-top: 20px;
-}
-#full-phone {
-    margin-top: 20px;
-    margin-left: -700px;
+#full-email, #full-linkedIn, #full-phone {
+    width: 20%;
 }
 
 /**/
 
+#contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    width: 50%;
+}
+
+#submit-form {
+    width: 50%;
+}
+
+#contact-components {
+    display: flex;
+}
+
 .input-style {
+    width: 60%;
     padding: 10px;
     border: 2px solid #ccc;
     border-radius: 5px;
@@ -619,44 +601,10 @@ body, html {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-#name-holder {
+#name-holder, #email-holder, #subject-holder, #message-holder {
     height: 20px;
-    width: 500px;
-    margin-left: -600px;
-    margin-top: 135px;;
-}
-
-#email-holder {
-    height: 20px;
-    width: 500px;
-    margin-left: -524px;
-    margin-top: 200px;
-    padding-top: -1px;
-    margin-bottom: 30px;
-}
-
-#subject-holder {
-    height: 20px;
-    width: 500px;
-    margin-top: 270px;
-    margin-left: -524px;
-}
-
-#message-holder {
-    height: 20px;
-    width: 210px;
-    padding-right: 300px;
-    margin-left: -523px;
-    margin-top: 340px;
-    padding-bottom: 150px;
+    width: 20%;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.submit {
-    margin-right: 0px;
-    margin-top: -325px;
-    margin-left: 1200px;
-    display: flex;
 }
 
 /**/
@@ -676,8 +624,6 @@ body, html {
     color: white;
     background: linear-gradient(to left,#333,#555);
     letter-spacing: 0.7px;
-    margin-top: 550px;
-    margin-left: -320px ;
   }
   
   .submitBtn:hover .arrow {

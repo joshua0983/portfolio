@@ -15,31 +15,13 @@ Welcome to my personal portfolio website. This site showcases my projects, skill
 - JavaScript
 
 ## Credits and Acknowledgments
-I am incredibly grateful to the following individuals and resources for their outstanding creations that have been used in this portfolio:
-
-### Icons and Logos
-- **Java, Python, HTML, CSS, JavaScript, and C logos**:
-  - Provided by [FontAwesome](https://fontawesome.com/).
-  - These icons are integral in showcasing the programming languages I am proficient in.
-
-- **Tools and Frameworks Icons (Git, Android Studio, Figma)**:
-  - Icons made by [FontAwesome](https://fontawesome.com/).
-  - These icons help visually represent the tools and technologies I frequently use.
-
-### Artistic Contributions
-- **General UI/UX Design Inspiration**:
-  - I drew inspiration from various online resources including [Behance](https://www.behance.net/) and [Dribbble](https://dribbble.com/), which offer a wealth of creative ideas and design layouts that influenced the aesthetics of my portfolio.
-
-### Special Thanks
-- A special thanks to the open-source community for the numerous libraries and frameworks that have been indirectly involved through various dependencies in my projects.
-- Thank you to my peers and mentors at Vassar College and ColorStack for their continuous support and feedback on my journey in tech.
+I am incredibly grateful to the artists at flaticon for their outstanding creations that have been used in this portfolio.
 
 ## Contact Information
 - **Email**: joshuajateno@gmail.com
 - **LinkedIn**: [Visit my LinkedIn](https://www.linkedin.com/in/joshuajateno)
-- **Phone**: +1 (845) 625-6683
 
-Feel free to reach out for collaborations or just a chat about technology and software development!
+Feel free to reach out for collaborations or just a chat!
 
 ---
 Thank you for visiting my portfolio!

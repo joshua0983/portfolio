@@ -21,7 +21,7 @@ I am incredibly grateful to the artists at flaticon for their outstanding creati
 - **Email**: joshuajateno@gmail.com
 - **LinkedIn**: [Visit my LinkedIn](https://www.linkedin.com/in/joshuajateno)
 
-Feel free to reach out for collaborations or just a chat!
+Feel free to reach out for collaborations or to just chat!
 
 ---
 Thank you for visiting my portfolio!

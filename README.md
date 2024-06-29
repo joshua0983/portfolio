@@ -13,7 +13,6 @@ Welcome to my personal portfolio website. This site showcases my projects, skill
 - HTML
 - CSS
 - JavaScript
-- Responsive Design Principles
 
 ## Credits and Acknowledgments
 I am incredibly grateful to the following individuals and resources for their outstanding creations that have been used in this portfolio:
